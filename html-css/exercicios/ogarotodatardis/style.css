@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*
+tudo em html é id e tudo em CSS # (só pode um elemento
+tudo em html é Class e tudo em CSS . (pode varios elementos)
+*/
+html
+body {
+  font-family:arial, helvetica, sans-serif;
+}
+body {
+background-image:url(../ex001/imagens/doctor-who2.jpg);
+background-position: center;
+}
+img {
+border-radius: 10px;
+box-shadow: 5px, 5px, 15px, rgba(37, 101, 27, 0.694);
+width: 600px;
+margin: auto; 
+}
+ol {
+width: 600px;
+padding: 10px;
+bottom: horizontal;
+box-orient: blue;
+margin: auto; 
+text-align: center;
+}
+main {
+background-color: white;
+border-radius: 10px;
+box-shadow: 5px, 5px, 15px, rgba(37, 101, 27, 0.694);
+width: 600px;
+padding: 10px;
+margin: auto; 
+text-align: center;
+}
+h1 {
+background-color: #2873d6;
+box-shadow: 5px, 5px, 15px, rgba(7, 84, 239, 0.596);
+font-family: 'old','Gill Sans MT','Trebuchet MS', sans-serif;
+font-size: 2.5em;
+text-align: center;
+}
+.level {
+  background-color:antiquewhite;
+  height: 300px;
+  width: 300px;
+  border-width: 10px;
+  border-color: bisque;
+}
+h1#princial {
+  background-color: #2873d6;
+box-shadow: 5px, 5px, 15px, rgba(7, 84, 239, 0.596);
+font-family: 'old', 'Gill Sans MT','Trebuchet MS', sans-serif;
+font-size: 2.5em;
+text-align: center;
+  }
+h2 {
+background-color:  #2D8C2A;
+text-align: center;
+}
+p {
+text-align:left;
+text-align: justify;
+text-indent: 30px;
+}
+font-face {
+font-family: 'old';
+src: url("fonte/OldLondon 1.ttf") format("Truetype"), url("fonte/OldLondon 2.ttf") format("Truetype"), url("fonte/OldLondon 1.otf") format("opentype"), url("fonte/OldLondon 2.otf") format("opentype");
+font-weight: normal;
+font-style: normal;
+text-align: center;
+}
+a {
+color: darkgoldenrod;
+text-decoration: none;
+font-weight: bold;
+}
+a:visited {
+color: rgb(48, 251, 16);
+}
+a:hover {
+color: #04080097;
+}
+a:active {
+color: rgb(0, 102, 255);
+}
+ a::after {
+text-decoration: none;
+font-weight:normal;
+color: rgb(51, 0, 255);
+}
+div {
+display: inline-block;
+background-color:rgb(131, 226, 43);
+border: 1px solid rgb(11, 11, 11);
+text-align:center;
+height: 100px;
+width: 150px;
+font-size: 13px;
+}
+div > p {
+display: none;
+}
+div:hover > p {
+display: block;
+color: aqua;
+background-color: rgb(42, 165, 52);
+width: 300px;
+}
+div:hover {
+background-color: hsl(240, 100%, 50%);
+}
+.btn{
+display: block;
+width: 70%;
+display: inline-block;
+color: #212529;
+background-color: #fff;
+border-color: #fff;
+box-shadow: #fff;
+text-decoration: none;
+border: 1px solid transparent;
+transition: color #fff;
+margin-bottom: 1px;
+font-weight: 400;
+line-height: 1.5;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+border-radius: 0.25rem;
+text-align: center;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+.btn:hover {
+color: #212529;
+  }
+.btn-primary {
+color: #fff;
+background-color: #0d6efd;
+border-color: #0d6efd;
+}
+.btn-primary:hover {
+color: #fff;
+background-color: #0b5ed7;
+border-color: #0a58ca;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+color: #fff;
+background-color: #0b5ed7;
+border-color: #0a58ca;
+box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+color: #fff;
+background-color: #0a58ca;
+border-color: #0a53be;
+}
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+color: #fff;
+background-color: #0d6efd;
+border-color: #0d6efd;
+}

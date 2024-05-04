@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa...</title>
+</head>
+<style>
+    /*cometario de css*/
+    body {
+        background-color: brown;
+        color: white;
+        font: normal 26pt arial;
+    }
+    h1 {
+        color: yellow;
+    }
+</style>
+<body> <!--cometario html---> 
+    <h1>Olá, Mundo!</h1>
+    <p>já me livrei da maldição!!</p>
+</body>
+<script>
+    var n1 = Number(window.prompt('digite um número: ' ))
+    var n2 = Number(window.prompt('digite outro número: ' ))
+    var s = n1 + n2
+    window.alert(`a soma entre ${n1} e ${n2} é igual a ${s}`) // concatenação
+    /*
+    (number + Number) para adição 
+    String + String ) Para concatenação]Number.parseInt = inteiro
+    Number.parseFloat = real
+    String para converter em numero para letra
+    toString letra para numero
+    'eu estou aprendendo s' // não faz interpolação
+    'eu estou aprendendo' + s  // usa concatenação
+    ´eu estou aprendendo ${s}´  // usa template string
+    length  // quantos caracteres a string tem
+    toUpperCase() // tudo para 'MAIÚSCULAS'
+    toLowercase() //  tudo para 'minúscula'
+    5 18 -12 0.5 -15.9 3.14 8.0 // number
+    "Google" 'Javacript' `Maria` // string
+    true false // boolean
+    typeof // tipo de...
+    var n1 = 1543.5
+    n1.toFixed(2).replace (".",",")
+    n1.toLocaleString('pt-BR', {Style: 'currency' currency: 'BRL'})
+    n1.toLocaleString('pt-BR', {Style: 'currency' currency: 'USD'})
+    n1.toLocaleString('pt-BR', {Style: 'currency' currency: 'EUR'})
+
+    nome = 'gustavo'
+    gustavo
+    idade = 41
+    41
+    nota = 5.5
+    5.5
+    nome
+    gustavo
+    idade
+    41
+    nota 
+    5.5
+    'o aluno' + nome + " com " + idade + 'anos tirou a nota' + nota
+    `o aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+
+
+*/
+</script>
+</html>
