@@ -2,7 +2,7 @@
 
 /*comfugurações* gerais*/
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@ html, body {
    background-size: contain;
    background-repeat: no-repeat;
 }
-h1{
+h1 {
     color: white;
     text-shadow: 2px 2px 0px #1526a7;
     padding: 10px;

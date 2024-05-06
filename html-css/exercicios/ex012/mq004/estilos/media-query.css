@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/*todas as demais medias*/
+
+/*Typical Device Breakpoints
+
+Para dispositivos móveis – 320px – 480px
+iPads e tablets – 481px – 768px
+Laptops e telas pequenas – 769px – 1024px
+Telas grandes e desktops – 1025px – 1200px
+TV e telas extragrandes – 1201px e mais
+
+
+Além da media mais comum que é o caso de acessar um site do desktop e acessar de um smartphone ou tablet, existem muitas outras medias, como por exemplo:
+
+All :Para todos os dispositivos.
+Screen :Para monitores ou outros dispositivos com telas coloridas e com resolução adequada.
+Handheld: Para dispositivos de mão. Normalmente com telas pequenas e banda limitada.
+Embossed: Para dispositivos que “imprimem” em braille.
+Tty: Para dispositivos que utilizam uma grade fixa para exibição de caracteres, como por exemplo, teletypes, terminais, dispositivos portáteis com display limitado.
+Print: Para impressão em papel.
+Braille: Para dispositivos táteis.
+Projection: Para apresentações, como PowerPoint.
+TV: Para dispositivos como televisores, ou seja, com baixa resolução, quantidade de cores e scroll limitado.
+Speech: Para sintetizadores de voz.
+
+
+Abaixo podemos ver uma listagem com algumas características que podem ser utilizadas para selecionar e definir os dispositivos que serão utilizados.
+
+<link rel="stylesheet" href="estilo.css" media="screen and (max-width:480px)" />
+
+
+width
+height
+device-width
+device-height
+orientation
+aspect-ratio
+device-aspect-ratio
+color
+color-index
+monochrome
+resolution
+scan
+grid
+
+
+
+Pequenas telas: até 600px
+Celular de 600px até 768px
+teblat de 768px até 992px
+Desktops de 992px até 1200px
+Grandes Telas – 1200px e mais
+*/
+
+/*printer */
+@media only print {
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessario */
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        width: 99vw;
+        border: 2px solid  black;
+    } 
+    main::after{
+        content: 'essa impressão foi feita pelo site dhannyllo-souza-tv.web.app';
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+
+    } 
+        img#phone { display: none;}
+        img#tablet { display: none;}
+        img#print { display: block;}
+        img#pc { display: none;}
+        img#tv { display: none;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+        
+    }
+        img#phone { display: none;}
+        img#tablet { display: block;}
+        img#print { display: none;}
+        img#pc { display: none;}
+        img#tv { display: none;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+        img#phone { display: none;}
+        img#tablet { display: none;}
+        img#print { display: none;}
+        img#pc { display: block;}
+        img#tv { display: none;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+    
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+        img#phone { display: none;}
+        img#tablet { display: none;}
+        img#print { display: none;}
+        img#pc { display: none;}
+        img#tv { display: block;}
+
+}
